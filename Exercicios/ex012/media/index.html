@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inserindo Videos no Html5</h1>
+    <p>Este vídeo está hospedado no meu proprio servidor</p>
+
+    <video width="60%" poster="../img/limao-siciliano6-qc0vmlpw64bvhvckr3ut425pkisxywh6hjh5k1543k.jpg" controls>
+        <source src="meuvideo.mp4" type="video/mp4">
+        <source src="meuvideo.ogv" type="video/ogv">
+        <p>seu navegador não tem compatibilidade para abrir o video</p>
+
+    </video>
+    <!--E possivel colocar o video em loop usando loop ao lado de controls-->
+    <!--O Poster é usado para dar imagem ao um video que não foi inicializado ainda-->
+    <!--Este formato assim da possibilidade de colocar diversos tipos de video mp4,ogv,mk4,webm
+    ele e usado pq existe alguns navegadores que nao aceita alguns tipos de formato sendo assim temos que adicionar diversos formatos para que se um nao seja aberto passe para o proximo formato ate que ele seja aberto caso nao abrar o P entrarar em açao-->
+    <h1>Inserindo videos dos youtube</h1>
+    <iframe width="560" height="355" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=bV0sznXlcRLcGOeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

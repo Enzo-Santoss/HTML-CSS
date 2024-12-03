@@ -1,0 +1,125 @@
+// Função para salvar os dados do formulário no localStorage
+    function salvarNoLocalStorage(event) {
+      event.preventDefault();  // Previne o envio do formulário
+
+      // Pega os dados dos campos do formulário
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      const celular = document.getElementById('celular').value;
+    
+    //
+    //const form = document.getElementById("form").value;
+    //const username = document.getElementById("username").value;
+    //const cpf = document.getElementById("cpf").value;
+    //const email = document.getElementById("email").value;
+    //const celular = document.getElementById("celular").value;
+    //const endereco = document.getElementById("endereco").value;
+    //const login = document.getElementById("login").value;
+    //const password = document.getElementById("password").value;
+    //const passwordConfirmation = document.getElementById("passwordconfirmation").value;
+    //
+      // Cria um objeto com os dados
+      const dados = {
+        username: username,
+        cpf: cpf,
+        email: email,
+        celular: celular,
+        endereco: endereco,
+        login: login,
+        password: password,
+        passwordconfirmation: passwordconfirmation,
+        
+        
+      };
+
+      // Salva os dados no localStorage (convertido para JSON)
+      localStorage.setItem('formData', JSON.stringify(dados));
+
+      // Exibe uma mensagem de sucesso (opcional)
+      alert('Dados salvos com sucesso!');
+    }
+
+    // Adiciona um ouvinte de evento para o formulário
+    document.getElementById('formCadastro').addEventListener('submit', salvarNoLocalStorage);
+
+    // Função para carregar os dados salvos, caso existam
+    function carregarDadosDoLocalStorage() {
+      const dadosSalvos = localStorage.getItem('formData');
+      if (dadosSalvos) {
+        const dados = JSON.parse(dadosSalvos);
+        
+        // Preenche os campos do formulário com os dados salvos
+        document.getElementById('username').value = dados.username;
+        document.getElementById('email').value = dados.email;
+        document.getElementById('celular').value = dados.celular;
+      }
+    }
+
+    // Chama a função para carregar os dados ao carregar a página
+    window.onload = carregarDadosDoLocalStorage;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Função para salvar os dados do formulário no localStorage
+function salvarNoLocalStorage(event) {
+  event.preventDefault();  // Previne o envio do formulário
+
+
+  // Cria um objeto com os dados
+  const dados = {
+    username: username,
+    cpf: cpf,
+    email: email,
+    celular: celular,
+    endereco: endereco,
+    login: login,
+    password: password,
+    passwordconfirmation: passwordconfirmation,
+    
+    
+  };
+
+  // Salva os dados no localStorage (convertido para JSON)
+  localStorage.setItem('form', JSON.stringify(dados));
+
+  // Exibe uma mensagem de sucesso (opcional)
+  alert('Dados salvos com sucesso!');
+}
+
+// Adiciona um ouvinte de evento para o formulário
+document.getElementById('form').addEventListener('submit', salvarNoLocalStorage);
+
+// Função para carregar os dados salvos, caso existam
+function carregarDadosDoLocalStorage() {
+  const dadosSalvos = localStorage.getItem('form');
+  if (dadosSalvos) {
+    const dados = JSON.parse(dadosSalvos);
+    
+    // Preenche os campos do formulário com os dados salvos
+    document.getElementById('username').value = dados.username;
+    document.getElementById('email').value = dados.email;
+    document.getElementById('celular').value = dados.celular;
+    document.getElementById('cpf').value = dados.cpf;
+    document.getElementById('endereco').value = dados.endereco;
+    document.getElementById('login').value = dados.login;
+    document.getElementById('password').value = dados.password;
+  }
+}
+
+// Chama a função para carregar os dados ao carregar a página
+window.onload = carregarDadosDoLocalStorage;

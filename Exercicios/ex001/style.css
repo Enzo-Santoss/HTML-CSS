@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(71, 70, 70);
+
+}
+img {
+    width: 1350px;
+
+}
+.caixa {
+    background-color: rgb(241, 238, 248);
+    width: 480px;
+    height: 135px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(8, 73, 29);
+    text-align: center;
+    font-size: 25px;
+}
+input {
+    width: 210px;
+    height: 25px;
+    border-radius: 10px;
+    transform: translateX(20px);
+    
+}
+button{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    transform: translateX(130px);
+    margin-top: 10px;
+    background-color: rgb(10, 153, 57);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(132, 207, 132);
+}

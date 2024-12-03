@@ -1,0 +1,28 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    color: #fff;
+}
+.nav-item{
+    align-items: center;
+}
+
+a.link-1{
+    display: block;
+    margin: 5px;
+    color: #fff;
+    list-style: none;
+    align-items: center;
+    list-style: none;
+}
+.link-2{
+    margin: 20px;
+    display: block;
+}
