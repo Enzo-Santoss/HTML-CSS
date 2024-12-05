@@ -9,17 +9,20 @@ html,body{
     min-height: 100vh;
 }
 header{
-    background-color: black;
-    color: #fff;
+    background-image: linear-gradient(to top , rgb(1, 7, 0) , rgba(123, 184, 123, 0.807));
+    color: #eeecec;
     text-align: center;
 
 }
 header h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 42px;
 }
 header p{
-    padding-top: 50px;
+    padding-top: 20px;
 }
 a{
     color: #fff;
@@ -33,12 +36,19 @@ a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    line-height: 1.5em;
+    padding-left: 45px;
+    font-size: 3.5vw;
+}
+section p{
+    padding-bottom: 1em;
 }
 .imagem  p {
-    width: 400px;
-    background-color: rgba(150, 10, 10, 0.485);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(27, 27, 27, 0.603);
+    text-shadow: 1.5px 1.5px 0px black;
 }
 .normal{
     background-color: #fff;
@@ -47,7 +57,19 @@ section{
 .imagem{
     background-color: rgb(62, 62, 62);
     color: #fff;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.674);
+    background-attachment: fixed;
 }
+#img01{
+    background-image: url('img/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+#img02{
+    background-image: url('img/background002.jpg');
+    background-size: cover;
+}
+
 footer{
     background-color: black;
     color: #fff;
